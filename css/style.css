@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1050px !important;
+}
+
+.btn-primary {
+    background-color: #1990c7 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    padding: 0 10px;
+}
+
+.nav-item a {
+    color: black !important;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.4s;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #1075a3;
+}
+
+.navbar img {
+    width: 15vw;
+}
+
+
+/*HEADER*/
+
+.carousel-item img {
+    width: 100%;
+    height: 86vh;
+}
+
+.showcase img {
+    width: 30%;
+}
+
+
+/*GALLERY*/
+
+.gallery {
+    background-color: #eeeded;
+}
+
+.gallery img {
+    transition: all ease-out 0.8s;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    transition: .3s ease-out;
+}
+
+
+/* Vision and Mission*/
+
+.vision-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-img-div img {
+    width: 80%;
+}
+
+
+/*-- ABOUT --*/
+
+.about-txt {
+    color: #1990c7;
+    font-size: 25px;
+}
+
+
+/*----- Volunteer -----------*/
+
+.volunteer-section {
+    background-image: url("../assets/hands.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.volunteer-div {
+    background-color: rgba(0, 0, 0, 0.681);
+    width: 100%;
+    height: 100%;
+}
+
+.volunteer-container {
+    color: #fff;
+}
+
+.volunteer-container .btn {
+    margin: auto;
+}
+
+.volunteer-btn-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------ SERVICES----------*/
+
+.service-section {
+    background-color: #eeeded;
+}
+
+.service1,
+.service2 {
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0 8px 10px -7px #d4e6f5;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.service-img-div {
+    width: 25%;
+}
+
+.service-content-div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-content-div h4 {
+    color: #1990c7;
+}
+
+.service1 img,
+.service2 img {
+    width: 100%;
+}
+
+
+/*Donations*/
+
+.donations-section {
+    background-color: #1075a3;
+}
+
+.donations-container {
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Contact*/
+
+.contact-section {
+    background-color: #f9f9f9;
+}
+
+#contact-txt {
+    color: #1990c7;
+}
+
+.contact-detail-div {
+    margin: 0 auto;
+}
+
+.contact-detail-head {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.contact-heading,
+.contact-subheading {
+    text-align: center;
+}
+
+.contact-subheading {
+    margin-bottom: 40px;
+}
+
+.form-tag {
+    width: 90%;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(231, 231, 231);
+    margin: auto;
+}
+
+.map-div {
+    margin: auto;
+}
+
+.contact-section iframe {
+    width: 100%;
+    margin: 10px;
+    height: 250px;
+}
+
+
+/*--- FOOTER --*/
+
+.footer {
+    background-color: #08577c;
+}
+
+.footer p {
+    color: #f9f9f9;
+}
+
+.footer .container {
+    max-width: 1200px !important;
+}
+
+.footer-logo-img {
+    width: 10vw;
+}
+
+.my-btn {
+    background-color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.topic {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.footer form input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footer form .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

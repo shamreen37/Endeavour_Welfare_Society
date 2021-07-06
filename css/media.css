@@ -1,0 +1,11 @@
+@media only screen and (max-width:768px) {
+    .contact-section iframe {
+        width: 95%;
+    }
+    .navbar img {
+        width: 27vw;
+    }
+    .card-text {
+        height: 125px;
+    }
+}
