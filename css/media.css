@@ -1,3 +1,36 @@
+@media only screen and (max-width:580px) {
+    .footer .row-col {
+        border-bottom: 1px solid rgb(194, 194, 194);
+        margin-bottom: 15px;
+    }
+    .service-img-div {
+        width: 40%;
+    }
+    .service-content-div {
+        width: 50%;
+    }
+    .about-1 .container,
+    .about-2 .container,
+    .about-3 .container {
+        padding: 0 20px;
+    }
+    .my-3 {
+        margin: 20px 20px;
+    }
+    .py-3 {
+        padding: 20px 20px;
+    }
+    .carousel .d-main {
+        display: none;
+    }
+    .carousel .d-mobile {
+        display: block;
+    }
+    .navbar img {
+        width: 30vw;
+    }
+}
+
 @media only screen and (max-width:768px) {
     .contact-section iframe {
         width: 95%;
@@ -9,3 +42,5 @@
         height: 125px;
     }
 }
+
+@media(max-width: 500px) {}
