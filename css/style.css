@@ -40,6 +40,7 @@ a {
 .nav-item a {
     color: black !important;
     border-bottom: 2px solid transparent;
+    width: max-content;
     transition: all ease 0.4s;
 }
 
@@ -325,8 +326,8 @@ a {
 }
 
 .topic {
-    font-size: 21px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 450;
     margin-bottom: 0;
     color: #fff !important;
 }
