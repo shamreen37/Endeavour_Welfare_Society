@@ -22,14 +22,6 @@ body {
     margin-bottom: 0;
 }
 
-.news-slider .btmline {
-    margin: auto;
-    height: 6px;
-    border-radius: 4px;
-    width: 54px;
-    background: #ff5050;
-}
-
 .news-slider .heading {
     height: 54px;
     overflow: hidden;
@@ -171,14 +163,6 @@ body {
     text-align: start;
 }
 
-.testimonial-slider .btmline {
-    margin: auto;
-    height: 6px;
-    border-radius: 4px;
-    width: 54px;
-    background: #ff5050;
-}
-
 .testimonial-slider .owl-stage-outer {
     padding: 15px 0;
 }
@@ -219,7 +203,7 @@ body {
     box-shadow: 0 8px 30px -7px #c9dff0bb;
     margin: 0 20px;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0;
     overflow: hidden;
     border: 1px solid rgb(231, 231, 231);
