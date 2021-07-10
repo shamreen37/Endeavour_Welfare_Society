@@ -20,9 +20,11 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i> 
-</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item  mx-1">
@@ -32,9 +34,10 @@
                         <a class="nav-link" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown  mx-1">
-                        <a class="nav-link dropdown-toggle" href="index.html#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Services
-      </a>
+                        <a class="nav-link dropdown-toggle" href="index.html#services" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -75,15 +78,19 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form-div">
-                        <form action="" class="form-tag">
+                        <form id="contactform"
+                            action="https://script.google.com/macros/s/AKfycbzShLZ-5Z_wAfWixZaRIrfDs9HGy3zGinQ3x07cHNAL-D2C68La3_6_teOaJHO8c7gv/exec"
+                            method="post" class="form-tag">
                             <div class="mb-3">
                                 <label for="" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                <input type="text" name="fullname" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Name" required />
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control" name="email" id="formemail"
+                                    placeholder="name@example.com" required />
                             </div>
 
 
@@ -91,37 +98,54 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="" class="form-label">Phone</label>
-                                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="First name">
+                                    <input type="tel" name='mob' pattern="[0-9]{10}" class="form-control"
+                                        placeholder="Phone Number" required />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="" class="form-label">City/Town</label>
-                                    <input type="text" class="form-control" placeholder="Place of Residence" aria-label="Last name">
+                                    <input type="text" name='city' class="form-control" placeholder="Place of Residence"
+                                        required />
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label for="" class="form-label d-block">You want to join our organisation as a: <br> </label>
+                                <label for="" class="form-label d-block">You want to join our organisation as a: <br>
+                                </label>
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio1"
+                                        value="Volunteer" required>
                                     <label class="form-check-label" for="inlineRadio1">Volunteer</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio2"
+                                        value="Beneficiary" required>
                                     <label class="form-check-label" for="inlineRadio2">Beneficiary</label>
                                 </div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Why you want to join our organisation?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message"></textarea>
+                                <textarea class="form-control" name='joinmsg' id="whyYouJoinUs" rows="3"
+                                    placeholder="Enter your message" required></textarea>
                             </div>
                             <button class="btn btn-primary ">Send Message</button>
+
+                            <span id='spinLoader' style=" display:none;"><i class="fa fa-spinner fa-spin"
+                                    style="font-size: 24px; margin: 0 10px; color: #ec6996;"></i></span>
+
+                            <div id='err-box'
+                                style="padding: 4px 8px; background: #f7d0d0; border: 1px solid #f36464; margin: 18px 0; display:none">
+                            </div>
+                            <div id='success-box'
+                                style="padding: 4px 8px; background: rgb(193 241 205); border: 1px solid rgb(57 187 109); margin: 18px 0; display:none">
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d16361.043643888022!2d77.35330040024773!3d23.31040516020103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sendeavour%20welfare%20society!5e0!3m2!1sen!2sin!4v1625462526226!5m2!1sen!2sin"
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d16361.043643888022!2d77.35330040024773!3d23.31040516020103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sendeavour%20welfare%20society!5e0!3m2!1sen!2sin!4v1625462526226!5m2!1sen!2sin"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
@@ -137,7 +161,8 @@
                         <div class="footer-logo-img">
                             <img src="assets/footer-logo.png" alt="">
                         </div>
-                        <p class=" pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus exercitationem amet repudiandae?</p>
+                        <p class=" pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            exercitationem amet repudiandae?</p>
                         <p class="pt-1">Copyright &copy; Endeavour. All Rights Reserved</p>
                     </div>
                 </div>
@@ -192,29 +217,68 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.js"></script>
+
+    <script>
+
+        var contact_us_Form = document.getElementById('contactform');
+        var contact_us_Success = document.getElementById('success-box');
+        var contact_us_Err = document.getElementById('err-box');
+        var spinLoader = document.getElementById('spinLoader');
+
+        contact_us_Form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            spinLoader.style.display = 'inline-block';
+            contact_us_Form.classList.add("disableElem");
+            contact_us_Success.style.display = 'none';
+            contact_us_Err.style.display = 'none';
+
+            sendMsg(
+                contact_us_Form.fullname.value,
+                contact_us_Form.email.value,
+                contact_us_Form.mob.value,
+                contact_us_Form.city.value,
+                contact_us_Form.joinOrgAs.value,
+                contact_us_Form.joinmsg.value,
+
+            );
+        });
+
+        function sendMsg(fullname, email, mob, city, joinOrgAs, whyJoinOrg) {
+            console.log(whyJoinOrg);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    jsonResp = JSON.parse(this.responseText);
+                    if (jsonResp.action == "Success") {
+                        spinLoader.style.display = 'none';
+                        contact_us_Form.classList.remove("disableElem");
+                        contact_us_Success.style.display = 'block';
+                        contact_us_Err.style.display = 'none';
+                        contact_us_Success.innerHTML = 'Your feedback has been submitted successfully. <a href="https://docs.google.com/spreadsheets/d/1O5cMPJz5Ynoi5NkF0mPM27q3S5nBjZ0QcdWZ0zWJhVg/edit?usp=sharing">Check here</a>.';
+
+                    } else if (jsonResp.action == "Error") {
+                        spinLoader.style.display = 'none';
+                        contact_us_Form.classList.remove("disableElem");
+                        contact_us_Success.style.display = 'none';
+                        contact_us_Err.style.display = 'block';
+                        contact_us_Success.innerHTML = jsonResp.type || 'Something went wrong.';
+                    }
+
+                }
+            };
+            xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzShLZ-5Z_wAfWixZaRIrfDs9HGy3zGinQ3x07cHNAL-D2C68La3_6_teOaJHO8c7gv/exec", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("fullname=" + fullname + "&email=" + email + "&phone=" + mob + "&city=" + city + "&joinOrgAs=" + joinOrgAs + "&whyJoinOrg=" + whyJoinOrg);
+        }
+
+    </script>
 
 
 
