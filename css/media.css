@@ -45,11 +45,14 @@
         overflow: hidden;
     }
     .form-tag {
-        width: 97%;
+        width: 98%;
+    }
+    .phone-input-div {
+        margin-bottom: 1rem!important;
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:769px) {
     .contact-section iframe {
         width: 95%;
     }
@@ -62,9 +65,12 @@
     .footer-logo-img {
         width: 23vw;
     }
+    .form-tag {
+        width: 90%;
+    }
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1100px) {
     .service-content-div {
         width: 100%;
         margin-top: 10px;

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -83,7 +84,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.596);
+    background: rgba(0, 0, 0, 0.682);
 }
 
 .showcase img {
@@ -403,7 +404,7 @@ a {
     margin: 3px 0;
 }
 
-.disableElem{
+.disableElem {
     pointer-events: none;
     opacity: 0.8;
 }
