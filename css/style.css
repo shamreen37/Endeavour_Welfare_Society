@@ -402,3 +402,8 @@ a {
     color: #1990c7 !important;
     margin: 3px 0;
 }
+
+.disableElem{
+    pointer-events: none;
+    opacity: 0.8;
+}
