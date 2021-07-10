@@ -1,7 +1,7 @@
-(function() {
+function loadNewsSlider() {
     "use strict";
 
-    var carousels = function() {
+    var carousels = function () {
         $(".owl-carousel1").owlCarousel({
             loop: true,
             center: true,
@@ -28,8 +28,6 @@
             },
         });
     };
+    carousels();
 
-    (function($) {
-        carousels();
-    })(jQuery);
-})();
+}
