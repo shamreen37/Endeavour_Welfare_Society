@@ -83,7 +83,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.548);
+    background: rgba(0, 0, 0, 0.596);
 }
 
 .showcase img {
@@ -116,13 +116,55 @@ a {
     background-color: #eeeded;
 }
 
+.gallery .container {
+    padding: 30px;
+}
+
 .gallery img {
-    transition: all ease-out 0.8s;
+    transition: all ease-out 0.6s;
 }
 
 .gallery img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s ease-out;
+}
+
+
+/* WE support*/
+
+.principle {
+    height: auto;
+    background: url("../gallery/flag.png") rgba(0, 0, 0, 0.61) no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.principle .upline {
+    width: 20%;
+    border: 2px solid rgb(87, 87, 87);
+}
+
+.principle .edu-policy {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principle .quote {
+    font-size: 18px;
+    width: 100%;
+    margin: 1rem auto;
+    font-style: italic;
+}
+
+.principle .quote .name {
+    font-size: 16px;
+    width: 100%;
+    font-style: normal;
+}
+
+.principle .w-30 {
+    width: 27%;
 }
 
 
@@ -280,7 +322,7 @@ a {
 .form-tag {
     width: 90%;
     background-color: #fff;
-    padding: 25px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(231, 231, 231);
