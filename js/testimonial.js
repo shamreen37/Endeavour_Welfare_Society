@@ -1,7 +1,7 @@
-(function() {
+function loadTestimonialSlider() {
     "use strict";
 
-    var carousels = function() {
+    var carousels = function () {
         $(".owl-carousel2").owlCarousel({
             loop: true,
             center: false,
@@ -27,18 +27,18 @@
         });
     };
 
-    (function($) {
-        carousels();
-    })(jQuery);
-})();
+    carousels();
+    owl2 = $('.owl-carousel2');
+    owl2.owlCarousel();
+}
 
 var owl2 = $('.owl-carousel2');
 owl2.owlCarousel();
 
-$('.customNextBtn').click(function() {
+$('.customNextBtn').click(function () {
     owl2.trigger('next.owl.carousel');
 });
 
-$('.customPrevBtn').click(function() {
+$('.customPrevBtn').click(function () {
     owl2.trigger('prev.owl.carousel');
 });
