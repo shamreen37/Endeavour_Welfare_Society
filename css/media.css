@@ -3,12 +3,6 @@
         border-bottom: 0.5px solid rgb(170, 170, 170);
         margin-bottom: 15px;
     }
-    .service-img-div {
-        width: 40%;
-    }
-    .service-content-div {
-        width: 50%;
-    }
     .about-1 .container,
     .about-2 .container,
     .about-3 .container {
@@ -34,15 +28,6 @@
     }
     .footer-logo-img {
         width: 27vw;
-    }
-    .service1,
-    .service2 {
-        flex-direction: column;
-    }
-    .service-img-div {
-        width: 100%;
-        height: 180px;
-        overflow: hidden;
     }
     .form-tag {
         width: 98%;

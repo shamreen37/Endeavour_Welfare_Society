@@ -104,11 +104,16 @@ body {
     padding: 4px !important;
 }
 
-.card-text {
+.card-body .heading {
+    margin-bottom: 5px !important;
+}
+
+.news-slider .card-body .card-text {
     text-align: left;
-    height: 108px;
+    height: 140px !important;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 14.8px !important;
 }
 
 @media (max-width: 767px) {
@@ -217,7 +222,7 @@ body {
 
 .card-text {
     text-align: left;
-    height: 110px;
+    height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
 }

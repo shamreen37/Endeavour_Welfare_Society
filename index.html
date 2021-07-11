@@ -38,12 +38,12 @@
                         <a class="nav-link" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown  mx-1">
-                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Vocational Training</a></li>
-                            <li><a class="dropdown-item" href="#">Apprenticeship & Placements</a></li>
+                            <li><a class="dropdown-item" href="#services">Vocational Training</a></li>
+                            <li><a class="dropdown-item" href="#services">Apprenticeship & Placements</a></li>
                         </ul>
                     </li>
                     <li class="nav-item  mx-1">
@@ -70,25 +70,25 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="gallery/h1.png" class="d-main w-100">
-                    <img src="gallery/hm1.png" class="d-mobile w-100">
+                <div class="carousel-item active" data-bs-interval="3000" style="background-image: url(gallery/h1.png); background-position: center; background-size: cover;">
+                    <!--- <img src="gallery/h1.png" class="d-main w-100">
+                    <img src="gallery/hm1.png" class="d-mobile w-100">-->
                     <div class="carousel-caption">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="gallery/h2.png" class="d-main w-100">
-                    <img src="gallery/hm2.png" class="d-mobile w-100">
+                <div class="carousel-item" data-bs-interval="3000" style="background-image: url(gallery/h2.png); background-position: center; background-size: cover;">
+                    <!--- <img src="gallery/h2.png" class="d-main w-100">
+                    <img src="gallery/hm2.png" class="d-mobile w-100">-->
                     <div class="carousel-caption">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="gallery/h3.png" class="d-main w-100">
-                    <img src="gallery/hm3.png" class="d-mobile w-100">
+                <div class="carousel-item" data-bs-interval="3000" style="background-image: url(gallery/h3.png); background-position: center; background-size: cover;">
+                    <!-- <img src="gallery/h3.png" class="d-main w-100">
+                    <img src="gallery/hm3.png" class="d-mobile w-100">-->
                     <div class="carousel-caption">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
@@ -107,10 +107,7 @@
     </header>
 
 
-
-
-
-
+    <!--======================================================================================================-->
 
 
 
@@ -172,23 +169,28 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="service1 ">
-                        <div class="service-img-div">
-                            <img src="assets/img6.png" alt="">
+                        <div class="service-icon-div">
+
+                            <div class="service-icon-inner-div"> <i class="fas fa-chalkboard-teacher"></i></div>
+                            <h4>Vocational Training</h4>
                         </div>
 
                         <div class="service-content-div">
-                            <h4>Vocational Training</h4>
                             <p>These courses provide training for the technical and non-technical fields. To provide faster employment opportunities right after class 10th or 12th.
                             </p>
                         </div>
                     </div>
-                    <div class="service2 ">
+                    <div class="service2">
 
-                        <div class="service-img-div">
-                            <img src="assets/img6.png" alt="">
+                        <div class="service-icon-div">
+
+                            <div class="service-icon-inner-div">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Apprenticeship & Placements</h4>
                         </div>
                         <div class="service-content-div">
-                            <h4>Apprenticeship and Placements</h4>
+
                             <p>For those who already have prior apprenticeship experience or meet respective job qualifications, we offer jobs and placement in MNCs and leading brands of the nation.
                             </p>
                         </div>
@@ -295,7 +297,7 @@
 
         <h2>Latest News </h2>
         <p id="news-section-line">____________</p>
-        <!---   <div class="btmline" style="margin-bottom: 0px;"></div>-->
+
         <div id="newsBlock" class="owl-carousel owl-carousel1 owl-theme">
             <!-- <div>
                 <div class="card text-center">
@@ -306,7 +308,7 @@
                         <div class="heading">
                             Covid-19: Harvard University student mobilises funds for India
                         </div>
-                        <p class="card-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                        <p class="news-card-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                             impedit quo minus id quod maxime placeat</p>
                         <div class="card-footer">
                             11 June 2021
@@ -443,11 +445,11 @@
 
                 <div class="col-md-2 col-sm-6 col-xs-12 px-2 text-light">
                     <div class="row-col">
-                        <p class="topic text-light pb-3">Menu</p>
+                        <p class="topic text-light pb-3">Quick Links</p>
                         <p><a>Home</a></p>
                         <p><a href="about.html">About Us</a></p>
-                        <p><a>Portfolio</a></p>
-                        <p><a>FAQs</a></p>
+                        <p><a>Services</a></p>
+                        <p><a>Latest News</a></p>
                         <p><a href="contact.html">Contact Us</a></p>
                     </div>
                 </div>
