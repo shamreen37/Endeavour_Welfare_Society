@@ -75,6 +75,8 @@ a {
     width: 100%;
     height: 86vh;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
 }
 
 .carousel-item::before {
@@ -84,7 +86,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.682);
+    background: rgba(0, 0, 0, 0.582);
 }
 
 .showcase img {
@@ -107,7 +109,11 @@ a {
 .about-2 .upline,
 .about-3 .upline {
     width: 15%;
-    border: 2px solid rgb(87, 87, 87);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.showcase-text h3 {
+    color: #1075a3;
 }
 
 
@@ -181,6 +187,7 @@ a {
 
 .vision-img-div img {
     width: 90%;
+    border-radius: 5px;
 }
 
 
@@ -317,6 +324,12 @@ a {
     margin: 0 auto;
 }
 
+.contact-detail-div i {
+    font-size: 21px;
+    color: #1990c7;
+    margin-right: 5px;
+}
+
 .contact-detail-head {
     font-size: 20px;
     font-weight: 500;
@@ -345,12 +358,15 @@ a {
 
 .map-div {
     margin: auto;
+    margin-top: 10px;
 }
 
 .contact-section iframe {
     width: 100%;
     margin: 10px;
     height: 250px;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 221, 221) !important;
 }
 
 
@@ -388,8 +404,8 @@ a {
     color: #fff !important;
 }
 
-.footer i {
-    font-size: 22px;
+.social-div a i {
+    font-size: 22px !important;
     margin-top: 10px;
     color: #cccbcb !important;
 }
@@ -412,14 +428,24 @@ a {
     display: flex;
 }
 
+.row-col i {
+    font-size: 16px;
+    color: #f9f9f9 !important;
+}
+
 .footer form .btn i {
     color: #1990c7 !important;
     margin: 3px 0;
+    font-size: 18px;
 }
 
 .disableElem {
     pointer-events: none;
     opacity: 0.8;
+}
+
+.footer hr {
+    color: rgb(170, 170, 170);
 }
 
 
