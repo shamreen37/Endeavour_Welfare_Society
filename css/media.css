@@ -21,7 +21,7 @@
         display: block;
     }
     .navbar img {
-        width: 40vw;
+        width: 38vw !important;
     }
     .footer i {
         font-size: 25px;
