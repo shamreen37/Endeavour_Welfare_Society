@@ -6417,8 +6417,8 @@ fieldset:disabled .btn {
     border: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease
+    opacity: .8;
+    transition: opacity .7s ease
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -6428,13 +6428,14 @@ fieldset:disabled .btn {
 }
 
 .carousel-indicators .active {
-    opacity: 1
+    opacity: 1;
+    background-color: #1075a3;
 }
 
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 1.25rem;
+    bottom: 1.6rem;
     left: 15%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
