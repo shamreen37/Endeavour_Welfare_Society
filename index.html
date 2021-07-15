@@ -254,7 +254,7 @@
     <!-- GALLERY-->
 
     <a href="" name="gallery"></a>
-    <section class="gallery" id="gallery">
+    <section id="imgGallerySec" class="gallery">
         <div class="container text-center py-5">
             <h2 class="serif-font">Gallery</h2>
             <hr class="upline upline-middle m-auto">
@@ -262,26 +262,7 @@
                 Have a glimpse at our past endeavours before and during the covid time. There are many memories to share but only a few can be captured, the rest you may find in the eyes of benefitted students.
 
             </p>
-            <div class="row">
-                <div class="col-6 col-lg-3 gallery-img g-2"> <img src="gallery/gallery1.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-6 col-lg-3 gallery-img g-2"> <img src="gallery/gallery2.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-6 col-lg-3 gallery-img g-2"> <img src="gallery/gallery3.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-6 col-lg-3 gallery-img g-2"> <img src="gallery/gallery4.png" class="img-fluid" alt="...">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-6 gallery-img g-2"> <img src="gallery/gallery5.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-lg-3 col-6 gallery-img g-2"> <img src="gallery/gallery6.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-lg-3 col-6 gallery-img g-2"> <img src="gallery/gallery7.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-lg-3 col-6 gallery-img g-2"> <img src="gallery/gallery8.png" class="img-fluid" alt="...">
-                </div>
+            <div id="imgGalleryBlock">
             </div>
         </div>
     </section>
@@ -480,8 +461,8 @@
                     <div class="">
                         <p class="topic pb-3">Newsletter</p>
 
-                        <form class="d-flex">
-                            <input class="form-control" type="search" placeholder="Email" aria-label="Search">
+                        <form class="d-flex" onsubmit="subscribeNewsletter(event,this)">
+                            <input class="form-control" name="subsForNewsletter" type="email" placeholder="Email" required>
                             <button class="btn btn-light" type="submit"><i class="fab fa-telegram-plane"></i></button>
                         </form>
                         <div class="social-div">
@@ -572,8 +553,14 @@
                 var newsCards = '';
 
                 dataJSON.news.forEach(e => {
+                    var hrefStart ='', hrefEnd = '';
+                    if(e.link && e.link.length>4){
+                        hrefStart ='<a href="'+e.link+'" target="_blank">'; 
+                        hrefEnd = '</a>';
+                    }
                     newsCards += `
                     <div>
+                        ${hrefStart}  
                         <div class="card text-center">
                             <div class="card-img-thumb"
                                 style="background: url(${e.img}); background-size: cover;">
@@ -588,6 +575,7 @@
                                 </div>
                             </div>
                         </div>
+                        ${hrefEnd}
                     </div>
                     `;
                 });
@@ -599,6 +587,55 @@
             } else {
                 document.getElementById('newsSection').style.display = 'none';
             }
+
+            if (dataJSON.gallery && dataJSON.gallery.length == 8) {
+                document.getElementById('imgGallerySec').style.display = 'block';
+                document.getElementById('imgGalleryBlock').innerHTML = `<div class="row">
+                        <div class="col-6 col-lg-3 gallery-img g-2"> <img src="${dataJSON.gallery[0].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-6 col-lg-3 gallery-img g-2"> <img src="${dataJSON.gallery[1].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-6 col-lg-3 gallery-img g-2"> <img src="${dataJSON.gallery[2].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-6 col-lg-3 gallery-img g-2"> <img src="${dataJSON.gallery[3].img}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-6 gallery-img g-2"> <img src="${dataJSON.gallery[4].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-3 col-6 gallery-img g-2"> <img src="${dataJSON.gallery[5].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-3 col-6 gallery-img g-2"> <img src="${dataJSON.gallery[6].img}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-3 col-6 gallery-img g-2"> <img src="${dataJSON.gallery[7].img}" class="img-fluid" alt="...">
+                        </div>
+                    </div>`;                        
+
+            } else {
+                document.getElementById('imgGallerySec').style.display = 'none';
+            }
+        }
+
+
+        function subscribeNewsletter(event,elmForm) { 
+            event.preventDefault(); 
+            elmForm.classList.add("disableElem");          
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    jsonResp = JSON.parse(this.responseText);
+                    elmForm.classList.remove("disableElem");
+                    elmForm.subsForNewsletter.value = '';
+                    if (jsonResp.action == "Success") {                        
+                        alert('Thank you for subscribing to our newsletter.')
+                    } else if (jsonResp.action == "Error") {                        
+                        alert('Oops! Something went wrong.');
+                    }
+                }
+            };
+            xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzShLZ-5Z_wAfWixZaRIrfDs9HGy3zGinQ3x07cHNAL-D2C68La3_6_teOaJHO8c7gv/exec", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("email=" + elmForm.subsForNewsletter.value + "&type=subscribeNewsletterEWS");
         }
     </script>
 
