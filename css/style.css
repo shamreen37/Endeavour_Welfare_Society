@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +40,10 @@ a {
 
 .upline-middle {
     width: 48px !important;
+}
+
+.serif-font {
+    font-family: 'Vollkorn', serif !important;
 }
 
 
@@ -93,6 +98,11 @@ a {
     background-image: url("gallery/h1.png") !important;
 }
 
+.carousel-caption h3 {
+    font-family: 'Vollkorn', serif !important;
+    color: #1990c7;
+}
+
 .carousel-indicators button {
     border-radius: 50% !important;
     width: 10px !important;
@@ -129,66 +139,6 @@ a {
 }
 
 
-/*GALLERY*/
-
-.gallery {
-    background-color: #eeeded;
-}
-
-.gallery .container {
-    padding: 30px;
-}
-
-.gallery img {
-    transition: all ease-out 0.6s;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.gallery img:hover {
-    transform: scale(1.2);
-    transition: .3s ease-out;
-}
-
-
-/* WE support*/
-
-.principle {
-    height: auto;
-    background: url("../gallery/flag.png") rgba(0, 0, 0, 0.61) no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-position: center;
-}
-
-.principle .upline {
-    width: 20%;
-    border: 2px solid rgb(87, 87, 87);
-}
-
-.principle .edu-policy {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-.principle .quote {
-    font-size: 18px;
-    width: 100%;
-    margin: 1rem auto;
-    font-style: italic;
-}
-
-.principle .quote .name {
-    font-size: 16px;
-    width: 100%;
-    font-style: normal;
-}
-
-.principle .w-30 {
-    width: 27%;
-}
-
-
 /* Vision and Mission*/
 
 .vision-img-div {
@@ -200,54 +150,6 @@ a {
 .vision-img-div img {
     width: 90%;
     border-radius: 5px;
-}
-
-
-/*-- ABOUT --*/
-
-.about-txt {
-    color: #1990c7;
-    font-size: 25px;
-}
-
-.about-img-div {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.about-img-div img {
-    border-radius: 3px;
-}
-
-
-/*----- Volunteer -----------*/
-
-.volunteer-section {
-    background-image: url("../assets/hands.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.volunteer-div {
-    background-color: rgba(0, 0, 0, 0.681);
-    width: 100%;
-    height: 100%;
-}
-
-.volunteer-container {
-    color: #fff;
-}
-
-.volunteer-container .btn {
-    margin: auto;
-}
-
-.volunteer-btn-div {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -307,6 +209,100 @@ a {
 }
 
 
+/* WE support*/
+
+.principle {
+    height: auto;
+    background: url("../gallery/flag.png") rgba(0, 0, 0, 0.61) no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.principle .upline {
+    width: 20%;
+    border: 2px solid rgb(87, 87, 87);
+}
+
+.principle .edu-policy {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principle .quote {
+    font-size: 18px;
+    width: 100%;
+    margin: 1rem auto;
+    font-style: italic;
+}
+
+.principle .quote .name {
+    font-size: 16px;
+    width: 100%;
+    font-style: normal;
+}
+
+.principle .w-30 {
+    width: 27%;
+}
+
+
+/*-- ABOUT --*/
+
+.about-txt {
+    color: #1990c7;
+    font-size: 25px;
+}
+
+.about-img-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-img-div img {
+    border-radius: 3px;
+}
+
+.regards-txt {
+    text-align: right;
+    margin-left: auto;
+}
+
+.message-txt {
+    color: #1990c7;
+    font-size: 22px;
+}
+
+.wishes-txt {
+    color: #1990c7;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*GALLERY*/
+
+.gallery {
+    background-color: #eeeded;
+}
+
+.gallery .container {
+    padding: 30px;
+}
+
+.gallery img {
+    transition: all ease-out 0.6s;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    transition: .3s ease-out;
+}
+
+
 /*Donations*/
 
 .donations-section {
@@ -316,6 +312,36 @@ a {
 .donations-container {
     text-align: center;
     color: #fff;
+}
+
+
+/*----- Volunteer -----------*/
+
+.volunteer-section {
+    background-image: url("../assets/hands.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.volunteer-div {
+    background-color: rgba(0, 0, 0, 0.681);
+    width: 100%;
+    height: 100%;
+}
+
+.volunteer-container {
+    color: #fff;
+}
+
+.volunteer-container .btn {
+    margin: auto;
+}
+
+.volunteer-btn-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -338,6 +364,9 @@ a {
 
 
 /*================================================================*/
+
+
+/* ABOUT US PAGE */
 
 #nep-details {
     margin-left: auto;
