@@ -31,6 +31,16 @@ a {
     text-decoration: none !important;
 }
 
+.flex-center {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.upline-middle {
+    width: 48px !important;
+}
+
 
 /*NAVBAR*/
 
@@ -73,10 +83,14 @@ a {
 
 .carousel-item {
     width: 100%;
-    height: 87.4vh;
+    height: 87.3vh;
     overflow: hidden;
     background-position: center;
     background-size: cover;
+}
+
+.carousel-item1 {
+    background-image: url("gallery/h1.png") !important;
 }
 
 .carousel-indicators button {
@@ -100,23 +114,14 @@ a {
     width: 30%;
 }
 
-.carousel .d-main {
-    display: block;
-}
-
-.carousel .d-mobile {
-    display: none;
-}
-
 .showcase img {
     width: 30%;
 }
 
-.about-1 .upline,
-.about-2 .upline,
-.about-3 .upline {
+.upline {
     width: 15%;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0.4px solid rgb(0, 0, 0) !important;
+    opacity: 0.9;
 }
 
 .showcase-text h3 {

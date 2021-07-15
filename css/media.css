@@ -30,10 +30,13 @@
         width: 27vw;
     }
     .form-tag {
-        width: 98%;
+        width: 100%;
     }
     .phone-input-div {
         margin-bottom: 1rem!important;
+    }
+    .row-col i {
+        font-size: 15px;
     }
 }
 
