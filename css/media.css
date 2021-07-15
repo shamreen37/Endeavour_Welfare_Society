@@ -2,6 +2,7 @@
     .footer .row-col {
         border-bottom: 0.5px solid rgb(170, 170, 170);
         margin-bottom: 15px;
+        text-align: center;
     }
     .about-1 .container,
     .about-2 .container,
@@ -26,11 +27,15 @@
     .footer i {
         font-size: 25px;
     }
+    .footer form {
+        justify-content: center;
+    }
     .footer-logo-img {
         width: 27vw;
+        margin: auto;
     }
     .form-tag {
-        width: 100%;
+        width: 100% !important;
     }
     .phone-input-div {
         margin-bottom: 1rem!important;

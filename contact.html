@@ -20,9 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,8 +32,7 @@
                         <a class="nav-link" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown  mx-1">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,12 +59,11 @@
     <!-- Contact form & details -->
     <section class="contact-section py-4">
         <div class="container">
-            <h2 class="contact-heading serif-font">Contact</h2>
-            <p class="contact-subheading">For any suggestions or queries feel free to contact us through any of the
-                modes provided below.
+            <h1 class="contact-heading serif-font">Contact</h1>
+            <p class="contact-subheading">For any suggestions or queries feel free to contact us through any of the modes provided below.
             </p>
             <div class="row m-auto">
-                <div class="col-lg-6 d-flex">
+                <div class="col-lg-6">
                     <div class="contact-detail-div ">
                         <h3 id="contact-txt">We'd love to hear from you!</h3>
                         <p class="contact-detail-head"><i class="fas fa-phone-alt"></i> Phone</p>
@@ -81,22 +77,25 @@
                         </p>
 
                     </div>
+                    <div class="map-div">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4848.564314345212!2d77.48992253431585!3d23.255756571401395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41f6d1239039%3A0xa2b69e73e5573bb8!2sBEST%20ITI%20(MP%20PVT%20ITI%2CANAND%20NAGAR)!5e0!3m2!1sen!2sin!4v1626110848810!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+
+
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form-div">
-                        <form id="contactform"
-                            action="https://script.google.com/macros/s/AKfycbzcWEq3G8GvB0A452_bImQiXEU9viVS_rd8vgVoB84-FduIaFHbKDd9WP9wNToISmmxFw/exec"
-                            method="post" class="form-tag">
+                        <form id="contactform" action="https://script.google.com/macros/s/AKfycbzcWEq3G8GvB0A452_bImQiXEU9viVS_rd8vgVoB84-FduIaFHbKDd9WP9wNToISmmxFw/exec" method="post" class="form-tag">
                             <div class="mb-3">
                                 <label for="" class="form-label">Full Name</label>
-                                <input type="text" name="fullname" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Name" required />
+                                <input type="text" name="fullname" class="form-control" id="exampleFormControlInput1" placeholder="Name" required />
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" name="email" id="formemail"
-                                    placeholder="name@example.com" required />
+                                <input type="email" class="form-control" name="email" id="formemail" placeholder="name@example.com" required />
                             </div>
 
 
@@ -104,13 +103,11 @@
                             <div class="row mb-3">
                                 <div class="col-md-6 phone-input-div">
                                     <label for="" class="form-label">Phone</label>
-                                    <input type="tel" name="mob" pattern="[0-9]{10}" class="form-control"
-                                        placeholder="Phone Number" required />
+                                    <input type="tel" name="mob" pattern="[0-9]{10}" class="form-control" placeholder="Phone Number" required />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="" class="form-label">City / Town</label>
-                                    <input type="text" name="city" class="form-control" placeholder="Place of Residence"
-                                        required />
+                                    <input type="text" name="city" class="form-control" placeholder="Place of Residence" required />
                                 </div>
                             </div>
 
@@ -118,41 +115,31 @@
                                 <label for="" class="form-label d-block">You want to join our organisation as a: <br>
                                 </label>
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio1"
-                                        value="Volunteer" required>
+                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio1" value="Volunteer" required>
                                     <label class="form-check-label" for="inlineRadio1">Volunteer Trainer</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio2"
-                                        value="Beneficiary" required>
+                                    <input class="form-check-input" type="radio" name="joinOrgAs" id="inlineRadio2" value="Beneficiary" required>
                                     <label class="form-check-label" for="inlineRadio2">Vocational Trainee</label>
                                 </div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Why you want to join our organisation?</label>
-                                <textarea class="form-control" name="joinmsg" id="whyYouJoinUs" rows="3"
-                                    placeholder="Enter your message" required></textarea>
+                                <textarea class="form-control" name="joinmsg" id="whyYouJoinUs" rows="3" placeholder="Enter your message" required></textarea>
                             </div>
                             <button class="btn btn-primary ">Send Message</button>
 
                             <span id="spinLoader" style=" display:none;"><i class="fa fa-spinner fa-spin"
                                     style="font-size: 24px; margin: 0 10px; color: #1075a3;"></i></span>
 
-                            <div id="err-box"
-                                style="padding: 4px 8px; background: #f7d0d0; border: 1px solid #f36464; margin: 18px 0; display:none">
+                            <div id="err-box" style="padding: 4px 8px; background: #f7d0d0; border: 1px solid #f36464; margin: 18px 0; display:none">
                             </div>
-                            <div id="success-box"
-                                style="padding: 4px 8px; background: rgb(193 241 205); border: 1px solid rgb(57 187 109); margin: 18px 0; display:none">
+                            <div id="success-box" style="padding: 4px 8px; background: rgb(193 241 205); border: 1px solid rgb(57 187 109); margin: 18px 0; display:none">
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="map-div">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4848.564314345212!2d77.48992253431585!3d23.255756571401395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41f6d1239039%3A0xa2b69e73e5573bb8!2sBEST%20ITI%20(MP%20PVT%20ITI%2CANAND%20NAGAR)!5e0!3m2!1sen!2sin!4v1626110848810!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         </div>
@@ -168,8 +155,7 @@
                         <div class="footer-logo-img">
                             <img src="assets/footer-logo.png" alt="">
                         </div>
-                        <p class=" pt-3"> Endeavour Welfare Society a non-governmental organization that aims to support
-                            the most vulnerable students to access their right to education and build their skillset.
+                        <p class=" pt-3"> Endeavour Welfare Society a non-governmental organization that aims to support the most vulnerable students to access their right to education and build their skillset.
                         </p>
 
                     </div>
@@ -198,12 +184,11 @@
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 px-2 text-light">
-                    <div class="">
+                    <div class="text-center">
                         <p class="topic pb-3">Newsletter</p>
 
                         <form class="d-flex" onsubmit="subscribeNewsletter(event,this)">
-                            <input class="form-control" name="subsForNewsletter" type="email" placeholder="Email"
-                                required>
+                            <input class="form-control" name="subsForNewsletter" type="email" placeholder="Email" required>
                             <button class="btn btn-light" type="submit"><i class="fab fa-telegram-plane"></i></button>
                         </form>
                         <div class="social-div">
@@ -230,9 +215,8 @@
 
 
     <!-- JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.js"></script>
@@ -243,7 +227,7 @@
         var contact_us_Err = document.getElementById('err-box');
         var spinLoader = document.getElementById('spinLoader');
 
-        contact_us_Form.addEventListener("submit", function (event) {
+        contact_us_Form.addEventListener("submit", function(event) {
             event.preventDefault();
             spinLoader.style.display = 'inline-block';
             contact_us_Form.classList.add("disableElem");
@@ -263,7 +247,7 @@
 
         function sendMsg(fullname, email, mob, city, joinOrgAs, whyJoinOrg) {
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
+            xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     jsonResp = JSON.parse(this.responseText);
                     if (jsonResp.action == "Success") {
@@ -292,7 +276,7 @@
             event.preventDefault();
             elmForm.classList.add("disableElem");
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
+            xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     jsonResp = JSON.parse(this.responseText);
                     elmForm.classList.remove("disableElem");

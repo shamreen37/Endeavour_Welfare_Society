@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');*/
+
 * {
     margin: 0;
     padding: 0;
@@ -298,15 +301,17 @@ a {
     padding: 30px;
 }
 
-.gallery img {
-    transition: all ease-out 0.6s;
+.gallery-img {
     border-radius: 3px;
     overflow: hidden !important;
 }
 
-.gallery img:hover {
+.gallery-img img {
+    transition: all ease-out 0.6s;
+}
+
+.gallery-img img:hover {
     transform: scale(1.1);
-    transition: .3s ease-out;
 }
 
 
@@ -423,7 +428,7 @@ a {
 .form-tag {
     width: 90%;
     background-color: #fff;
-    padding: 20px 20px;
+    padding: 30px 20px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(231, 231, 231);
@@ -431,14 +436,17 @@ a {
 }
 
 .map-div {
+    width: 100%;
     margin: auto;
     margin-top: 10px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .contact-section iframe {
     width: 100%;
-    margin: 10px;
-    height: 250px;
+    margin: 10px 0;
+    height: 200px;
     border-radius: 5px;
     border: 1px solid rgb(221, 221, 221) !important;
 }
@@ -499,7 +507,7 @@ a {
 .footer form input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    max-width: 290px;
+    max-width: 260px;
 }
 
 .footer form .btn {
