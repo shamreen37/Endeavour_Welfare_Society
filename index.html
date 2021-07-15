@@ -76,7 +76,7 @@
                     <div class="carousel-caption">
                         <h3>If they are committed , why won't we? </h3>
                         <p> If you pledge to give your 50% contribution we will give 100% from our side to make their future bright</p>
-                        <a href="https://rzp.io/l/64PtwIDiU"> <button class="btn btn-primary">Donate Now</button></a>
+                        <a href="https://rzp.io/l/64PtwIDiU" target="_blank"> <button class="btn btn-primary">Donate Now</button></a>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000" style="background-image: url(gallery/h2.png);">
@@ -85,7 +85,7 @@
                         <h3>Their future! Their decision!</h3>
                         <p> “One of the most powerful ways to engage students is to let them take charge of their own learning and choose the field they like”
                         </p>
-                        <a href="https://rzp.io/l/64PtwIDiU"> <button class="btn btn-primary">Donate Now</button></a>
+                        <a href="https://rzp.io/l/64PtwIDiU" target="_blank"> <button class="btn btn-primary">Donate Now</button></a>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000" style="background-image: url(gallery/h3333.png);">
@@ -95,7 +95,7 @@
                         <p>
                             We focus on rational learning along with textual learning so they stand tall in the future.
                         </p>
-                        <a href="https://rzp.io/l/64PtwIDiU"> <button class="btn btn-primary">Donate Now</button></a>
+                        <a href="https://rzp.io/l/64PtwIDiU" target="_blank"> <button class="btn btn-primary">Donate Now</button></a>
                     </div>
                 </div>
             </div>
@@ -308,7 +308,7 @@
             <h3 class="serif-font">Change Lives With A Donation</h3>
             <p>Giving a donation to Endeavour Welfare Society to help us reach more people and communities to make an impact.
             </p>
-            <a href="https://rzp.io/l/64PtwIDiU"> <button class="btn btn-light">Donate Now</button></a>
+            <a href="https://rzp.io/l/64PtwIDiU" target="_blank"> <button class="btn btn-light">Donate Now</button></a>
         </div>
     </section>
 
@@ -423,12 +423,12 @@
     <footer class="footer">
         <div class="container py-4 text-start">
             <div class="row ">
-                <div class="col-md-4 col-sm-6 col-xs-12 px-2 text-light ">
+                <div class="col-md-4 col-sm-6 col-xs-12 text-light ">
                     <div class="row-col">
                         <div class="footer-logo-img">
                             <img src="assets/footer-logo.png" alt="">
                         </div>
-                        <p class=" pt-3">
+                        <p class="pt-3 footer-logo-txt">
                             Endeavour Welfare Society a non-governmental organization that aims to support the most vulnerable students to access their right to education and build their skillset.
                         </p>
 
@@ -470,7 +470,7 @@
 
                             <a href="https://www.instagram.com/endeavour15022019/" class="p-1"><i class="fab fa-instagram"></i> </a>
                             <a href="https://www.facebook.com/Endeavour-Welfare-Society-101830755517381/" class="p-1"><i class="fab fa-facebook-f"></i> </a>
-                            <a href="" class="p-1"><i class="fab fa-linkedin-in"></i> </a>
+                            <a href="http://www.linkedin.com/in/endeavour-welfare-society-a06822217" class="p-1"><i class="fab fa-linkedin-in"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -553,9 +553,10 @@
                 var newsCards = '';
 
                 dataJSON.news.forEach(e => {
-                    var hrefStart ='', hrefEnd = '';
-                    if(e.link && e.link.length>4){
-                        hrefStart ='<a href="'+e.link+'" target="_blank">'; 
+                    var hrefStart = '',
+                        hrefEnd = '';
+                    if (e.link && e.link.length > 4) {
+                        hrefStart = '<a href="' + e.link + '" target="_blank">';
                         hrefEnd = '</a>';
                     }
                     newsCards += `
@@ -609,7 +610,7 @@
                         </div>
                         <div class="col-lg-3 col-6 gallery-img g-2"> <img src="${dataJSON.gallery[7].img}" class="img-fluid" alt="...">
                         </div>
-                    </div>`;                        
+                    </div>`;
 
             } else {
                 document.getElementById('imgGallerySec').style.display = 'none';
@@ -617,18 +618,18 @@
         }
 
 
-        function subscribeNewsletter(event,elmForm) { 
-            event.preventDefault(); 
-            elmForm.classList.add("disableElem");          
+        function subscribeNewsletter(event, elmForm) {
+            event.preventDefault();
+            elmForm.classList.add("disableElem");
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     jsonResp = JSON.parse(this.responseText);
                     elmForm.classList.remove("disableElem");
                     elmForm.subsForNewsletter.value = '';
-                    if (jsonResp.action == "Success") {                        
+                    if (jsonResp.action == "Success") {
                         alert('Thank you for subscribing to our newsletter.')
-                    } else if (jsonResp.action == "Error") {                        
+                    } else if (jsonResp.action == "Error") {
                         alert('Oops! Something went wrong.');
                     }
                 }

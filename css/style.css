@@ -44,6 +44,8 @@ a {
 
 .serif-font {
     font-family: 'Vollkorn', serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.6px;
 }
 
 
@@ -58,6 +60,11 @@ a {
     border-bottom: 2px solid transparent;
     width: max-content;
     transition: all ease 0.4s;
+}
+
+.dropdown-item {
+    margin-bottom: 5px;
+    width: 100% !important;
 }
 
 .nav-item a:hover {
@@ -294,11 +301,11 @@ a {
 .gallery img {
     transition: all ease-out 0.6s;
     border-radius: 3px;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .gallery img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s ease-out;
 }
 
@@ -452,11 +459,15 @@ a {
 }
 
 .footer .container {
-    max-width: 1200px !important;
+    max-width: 1100px !important;
 }
 
 .footer-logo-img {
     width: 10vw;
+}
+
+.footer-logo-txt {
+    width: 90%;
 }
 
 .my-btn {
