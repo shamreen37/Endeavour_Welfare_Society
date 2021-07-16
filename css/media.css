@@ -4,22 +4,22 @@
         margin-bottom: 15px;
         text-align: center;
     }
+    .footer .row-last-col {
+        text-align: center;
+    }
     .about-1 .container,
     .about-2 .container,
     .about-3 .container {
         padding: 0 20px;
+    }
+    .service-icon-div h4 {
+        font-size: 20px !important;
     }
     .my-3 {
         margin: 20px 20px;
     }
     .py-3 {
         padding: 20px 20px;
-    }
-    .carousel .d-main {
-        display: none;
-    }
-    .carousel .d-mobile {
-        display: block;
     }
     .navbar img {
         width: 38vw !important;
@@ -46,9 +46,6 @@
 }
 
 @media only screen and (max-width:769px) {
-    .contact-section iframe {
-        width: 95%;
-    }
     .navbar img {
         width: 28vw;
     }

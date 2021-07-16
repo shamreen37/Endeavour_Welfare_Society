@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 /*@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');*/
 
@@ -46,10 +48,14 @@ a {
 }
 
 .serif-font {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'Libre Baskerville', serif !important;
+    /* font-family: 'Vollkorn', serif !important;*/
     font-weight: 500 !important;
     letter-spacing: 0.6px;
 }
+
+
+/*=========================================================*/
 
 
 /*NAVBAR*/
@@ -109,7 +115,7 @@ a {
 }
 
 .carousel-caption h3 {
-    font-family: 'Vollkorn', serif !important;
+    font-family: 'Libre Baskerville', serif !important;
     color: #1990c7;
 }
 
@@ -216,6 +222,7 @@ a {
     color: #1990c7;
     margin-right: 0;
     width: 70%;
+    font-size: 21px !important;
 }
 
 
@@ -433,22 +440,20 @@ a {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(231, 231, 231);
     margin: auto;
+    margin-top: 10px;
 }
 
 .map-div {
     width: 100%;
-    margin: auto;
     margin-top: 10px;
-    display: block;
     margin-bottom: 15px;
 }
 
 .contact-section iframe {
     width: 100%;
-    margin: 10px 0;
-    height: 200px;
-    border-radius: 5px;
+    height: 250px;
     border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 5px;
 }
 
 
