@@ -151,7 +151,7 @@ a {
 }
 
 .showcase-text h3 {
-    color: #1075a3;
+    color: #1075a3 !important;
 }
 
 
@@ -281,13 +281,10 @@ a {
     border-radius: 3px;
 }
 
-.regards-txt {
-    text-align: right;
-    margin-left: auto;
-}
+.regards-txt {}
 
 .message-txt {
-    color: #1990c7;
+    color: #1075a3;
     font-size: 22px;
 }
 
