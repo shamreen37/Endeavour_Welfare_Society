@@ -31,7 +31,7 @@
         justify-content: center;
     }
     .footer-logo-img {
-        width: 27vw;
+        width: 24vw !important;
         margin: auto;
     }
     .form-tag {
@@ -43,6 +43,10 @@
     .row-col i {
         font-size: 15px;
     }
+    .footer-logo-txt {
+        width: 100% !important;
+        padding: 0 10px;
+    }
 }
 
 @media only screen and (max-width:769px) {
@@ -53,7 +57,7 @@
         height: 125px;
     }
     .footer-logo-img {
-        width: 23vw;
+        width: 12vw;
     }
     .form-tag {
         width: 90%;
